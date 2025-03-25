@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    padding: 16px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.board {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    gap: 16px;
+}
+
+.board .column {
+    width: 300px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.board .column .tasks {
+    border: 1px dashed #ccc;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px;
+}
+
+.board .column .btn-add-task {
+    border: none;
+    background-color: #009465;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.board .column .btn-add-task:hover {
+    background-color: #007a54;
+}
+
+.board .column .task {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.board .column .tasks {
+    cursor: pointer;
+}
+
+.board .column .task button {
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.board .column .task button:hover {
+    background-color: #d51717;
+}
