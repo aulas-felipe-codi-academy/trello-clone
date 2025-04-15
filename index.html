@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=delete"
+        />
     </head>
     <body>
         <div class="container">
@@ -16,14 +20,14 @@
                     <h2>A fazer</h2>
                     <div
                         class="tasks"
-                        ondrag="drag(event)"
                         ondrop="drop(event)"
-                        onclick="addTask('todo')"
+                        ondragover="allowDrop(event)"
+                        onclick="addTask(event, 'todo')"
                     ></div>
                     <button
                         type="button"
                         class="btn-add-task"
-                        onclick="addTask('todo')"
+                        onclick="addTask(event, 'todo')"
                     >
                         Add Task
                     </button>
@@ -33,14 +37,14 @@
                     <h2>Fazendo</h2>
                     <div
                         class="tasks"
-                        ondrag="drag(event)"
                         ondrop="drop(event)"
-                        onclick="addTask('doing')"
+                        ondragover="allowDrop(event)"
+                        onclick="addTask(event, 'doing')"
                     ></div>
                     <button
                         type="button"
                         class="btn-add-task"
-                        onclick="addTask('doing')"
+                        onclick="addTask(event, 'doing')"
                     >
                         Add Task
                     </button>
@@ -50,14 +54,14 @@
                     <h2>Concluído</h2>
                     <div
                         class="tasks"
-                        ondrag="drag(event)"
                         ondrop="drop(event)"
-                        onclick="addTask('done')"
+                        ondragover="allowDrop(event)"
+                        onclick="addTask(event, 'done')"
                     ></div>
                     <button
                         type="button"
                         class="btn-add-task"
-                        onclick="addTask('done')"
+                        onclick="addTask(event, 'done')"
                     >
                         Add Task
                     </button>
